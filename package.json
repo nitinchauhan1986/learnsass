@@ -4,8 +4,11 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css" : "node-sass scss/screen.scss public/css/main.css",
-    "watch-css" : "nodemon -e scss -x \"npm run build-css\""
-      
+    "build-css": "node-sass scss/screen.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3"
   }
 }
