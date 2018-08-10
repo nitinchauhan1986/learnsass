@@ -1,0 +1,68 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+.base{
+    border-radius: 2px;
+    width:100px;
+    height: 100px;
+
+}
+
+.main{
+    @extend .base;
+    background: $color;
+    width:100%;
+    height:$height;
+    float:left;
+
+}
+.main::after{
+    @include pseudo;
+ }
+
+ .sixteen-nine {
+    @include aspect-ratio(16,9);
+   }
+   
+input,  
+textarea {  
+    @include input-placeholder {
+        color: $grey;
+    }
+}
+
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+
+.box{
+    width:500px;
+    background:$red;
+}
+
+.buttondefault{
+    height:50px;
+    width:150px;
+    display: inline-block;
+}
+
+.button{
+    background:$color;
+    @extend .buttondefault;
+    
+}
+.button1{
+    background:$grey;
+    @extend .buttondefault;
+    
+}
+.button2{
+    background:$black;
+    @extend .buttondefault;
+    
+}

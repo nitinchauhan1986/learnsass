@@ -1,0 +1,82 @@
+/*Media queries
+A massive time saver! You can just use pixel values but we have some default breakpoints setup that work too, another time saver while keeping your breakpoints consistent.*/
+/*Truncate*/
+.base, .main {
+  border-radius: 2px;
+  width: 100px;
+  height: 100px; }
+
+.main {
+  background: #990000;
+  width: 100%;
+  height: 100px;
+  float: left; }
+
+.main::after {
+  content: "";
+  display: block;
+  position: absolute; }
+
+.sixteen-nine {
+  position: relative; }
+  .sixteen-nine:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; }
+  .sixteen-nine .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .sixteen-nine .content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+input.placeholder,
+textarea.placeholder {
+  color: #ccc; }
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ccc; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #ccc; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ccc; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+.site-header {
+  padding: 2rem;
+  font-size: 1.8rem; }
+  @media only screen and (min-width: 1024px) {
+    .site-header {
+      padding-top: 4rem;
+      font-size: 2.4rem; } }
+
+.box {
+  width: 500px;
+  background: #990000; }
+
+.buttondefault, .button, .button1, .button2 {
+  height: 50px;
+  width: 150px;
+  display: inline-block; }
+
+.button {
+  background: #990000; }
+
+.button1 {
+  background: #ccc; }
+
+.button2 {
+  background: #000; }
