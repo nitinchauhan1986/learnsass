@@ -23,7 +23,7 @@ A massive time saver! You can just use pixel values but we have some default bre
     display: block;
     content: "";
     width: 100%;
-    padding-top: 56.25%; }
+    padding-top: 100%; }
   .sixteen-nine .content {
     position: absolute;
     top: 0;
