@@ -42,7 +42,14 @@
       }
     }
   }
-
+  //How to dynamically change text color based on a background color
+  @function dynamic-text-color($color) {
+    @if (lightness($color) > 50) {
+      @return #000000; // Lighter backgorund, return dark color
+    } @else {
+      @return #ffffff; // Darker background, return light color
+    }
+  }
 
 
 @mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
@@ -87,7 +94,6 @@ $breakpoints: (
 }
 
 /*Truncate*/
-
 @mixin truncate($truncation-boundary) {
     max-width: $truncation-boundary;
     white-space: nowrap;

@@ -67,16 +67,44 @@ textarea::-webkit-input-placeholder {
   width: 500px;
   background: #990000; }
 
-.buttondefault, .button, .button1, .button2 {
-  height: 50px;
-  width: 150px;
-  display: inline-block; }
+.buttons a {
+  border-radius: 10px;
+  display: block;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  padding: 1em 2em;
+  margin: 1em auto;
+  width: 30%;
+  text-align: center; }
 
-.button {
-  background: #990000; }
+.confirm {
+  background: #45a21a;
+  color: #ffffff;
+  max-width: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
-.button1 {
-  background: #ccc; }
+.warning {
+  background: #ffc53a;
+  color: #000000; }
 
-.button2 {
-  background: #333; }
+.alert {
+  background: #ac2222;
+  color: #ffffff; }
+
+.samplefont {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #ac2222;
+  font-weight: bold;
+  line-height: 25px;
+  background: red;
+  display: block;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+  .samplefont :after {
+    content: "564";
+    display: block;
+    position: relative; }

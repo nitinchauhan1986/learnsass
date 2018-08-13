@@ -45,24 +45,42 @@ textarea {
     background:$red;
 }
 
-.buttondefault{
-    height:50px;
-    width:150px;
-    display: inline-block;
+%buttondefault {
+    border-radius: 10px;
+    display: block;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    padding: 1em 2em;
+    margin: 1em auto;
+    width: 30%;
+    text-align: center;
+  }
+
+  .buttons a{
+    @extend %buttondefault;
+  }
+.confirm{
+    background:$confirm;
+    color:dynamic-text-color($confirm);
+    @include truncate(5px);
+    
 }
 
-.button{
-    background:$color;
-    @extend .buttondefault;
+.warning{
+    background:$warning;
+    color:dynamic-text-color($warning);
     
 }
-.button1{
-    background:$grey;
-    @extend .buttondefault;
-    
+.alert{
+    background:$alert;
+    color:dynamic-text-color($alert);
 }
-.button2{
-    background:$black;
-    @extend .buttondefault;
-    
+.samplefont{
+    @include font-source-sans(25px,$alert,bold,25px);
+    background: red;
+    display: block;
+    @include transform(translateY(-100%));
+    &   :after{
+        @include pseudo(block,relative,'564');
+    }
 }
